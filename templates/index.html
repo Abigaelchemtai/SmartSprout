@@ -1,0 +1,204 @@
+
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>SmartSprout</title>
+    {% endblock %}
+
+{% block content %}
+
+    {% include 'navigation.html' %}
+
+
+
+<!--carousel-->
+<div id="#home">
+<div id="carouselExampleCaptions" class="carousel slide" >
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <img src="{% static 'images/wall1.avif' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption ">
+        <h5>Joyful Reading Moments</h5>
+        <p>Children immersed in captivating stories, fostering a love for learning.</p>
+        <p><a href="#" class="btn-warning mt3">Learn More</a> </p>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <img src="{% static 'images/wall2.avif' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption ">
+        <h5>Inspiring Classroom Dialogues</h5>
+        <p>A dedicated teacher leading thought-provoking discussions among eager students.</p>
+        <p><a href="#" class="btn-warning mt3">Learn More</a> </p>
+      </div>
+    </div>
+    <div class="carousel-item active">
+      <img src="{% static 'images/wall3.avif' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption ">
+        <h5>Literary Exploration Hub</h5>
+        <p>An inviting space where books await exploration on every table.</p>
+        <p><a href="#" class="btn-warning mt3">Learn More</a> </p>
+        </div>
+    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+ </div>
+
+
+<!--About-->
+
+<section id="about" class="my-5 text-center" >
+    <div class="container">
+        <div class="row">
+            <h2>About Smart Sprout 🌱</h2>
+            <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="about-img " >
+                    <img src="{% static 'images/Design.avif' %}" alt="sport" class="img-fluid">
+                    <h2></h2>
+                     </div>
+            </div>
+             <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="about-img " >
+                    <img src="{% static 'images/discussion.avif' %}" alt="sport" class="img-fluid">
+                    <h2></h2>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="about-img " >
+                    <img src="{% static 'images/lunch.avif' %}" alt="sport" class="img-fluid">
+                    <h2></h2>
+                </div>
+            </div>
+            <p>Welcome to Smart Sprout, where we empower parents to shape their child's educational journey with confidence. Discover schools tailored to your preferences, connecting families and fostering a love for learning. Join us in cultivating bright futures!</p>
+              <p><strong>Discover Exceptional Schools:</strong> Explore a curated list of schools, each offering unique approaches to education. From innovative teaching methods to state-of-the-art facilities, find the perfect fit that aligns with your child's learning style and aspirations.</p>
+                  <p><strong>Effective Communication 📢:</strong> Smart Sprout facilitates seamless communication between parents, teachers, and school administrators. Stay informed about your child's progress, upcoming events, and important announcements. Collaboration is key to a thriving educational experience.</p>
+                    <p><strong>Foster Collaboration 🤝:</strong> We believe in the power of collaboration. Smart Sprout encourages collaboration between parents, teachers, and schools to create a supportive learning environment. Engage in discussions, share insights, and contribute to the collective growth of our educational community.</p>
+                        <p><strong>Customized Information for Parents 🎓:</strong> Smart Sprout goes beyond listings. We provide parents with tailored information based on schools and their specific needs. Whether it's academic programs, extracurricular activities, or facilities, make informed decisions that align with your child's unique requirements.</p>
+                             <p>Join us in creating an educational ecosystem where every child thrives. Smart Sprout is more than an app; it's a community dedicated to the success and well-being of our future leaders.</p>
+
+        </div>
+    </div>
+</section>
+
+<!--explore-->
+{% include 'explore.html' %}
+<!--services-->
+
+    {% include 'services.html' %}
+
+    <!--blog-->
+<section id="blog" class="my-5 text-center">
+    <div class="container">
+        <div class="row">
+            <h1>Blog Platform 📝</h1>
+
+            <!-- Abigael Chemtai -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card rounded my-3">
+                    <img src="{% static 'images/Abbie.avif' %}" class="card-rounded" alt="Abigael Chemtai">
+                    <div class="card-body">
+                        <h2 class="card-title">Abigael Chemtai</h2>
+                        <p class="card-text">Email: abigaelchemtai8@gmail.com</p>
+                        <p class="card-text">Comment: "Hello! I'm Abigael Chemtai, the founder of Marel Leads. We specialize in creating innovative marketing solutions to help businesses grow. Check out our website: <a href="https://www.marelleads.com" target="_blank">Marel Leads</a>."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eileen Juma -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card rounded my-3">
+                    <img src="{% static 'images/eileen.avif' %}" class="card-rounded" alt="Eileen Juma">
+                    <div class="card-body">
+                        <h2 class="card-title">Eileen Juma</h2>
+                        <p class="card-text">Email: eileen@gmail.com</p>
+                        <p class="card-text">Comment: "Hi there! I'm Eileen Juma, the brains behind Davin Spares. Our company is dedicated to providing top-notch spare parts for various industries. Explore our offerings at <a href="https://www.davinspares.com" target="_blank">Davin Spares</a>."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job Kiprop -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card rounded my-3">
+                    <img src="{% static 'images/job.avif' %}" class="card-rounded" alt="Job Kiprop">
+                    <div class="card-body">
+                        <h2 class="card-title">Job Kiprop</h2>
+                        <p class="card-text">Email: jobkiprop@gmail.com</p>
+                        <p class="card-text">Comment: "Hey! I'm Job Kiprop, the founder of Jevan Tecs. We specialize in cutting-edge technologies to bring your ideas to life. Explore our tech solutions at <a href="https://www.jevantecs.com" target="_blank">Jevan Tecs</a>."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Isaac Ndiwa -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card rounded my-3">
+                    <img src="{% static 'images/isaac.avif' %}" class="img-rounded" alt="Isaac Ndiwa">
+                    <div class="card-body">
+                        <h2 class="card-title">Isaac Ndiwa</h2>
+                        <p class="card-text">Email: ndiwaissac@gmail.com</p>
+                        <p class="card-text">Comment: "Greetings! I'm Isaac Ndiwa, the mind behind Africa Tols. We provide high-quality tools for various industries. Discover our products at <a href="https://www.africatols.com" target="_blank">Africa Tols</a>."</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!--Contact-->
+<section id="contact">
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Contact Us</h2>
+  <form action="" method="post">
+      {% csrf_token %}
+    <div class="mb-3">
+      <label for="name" class="form-label">Your Name</label>
+      <input type="text" class="form-control" name="name"id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Your Email</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+    </div>
+    <div class="mb-3">
+      <label for="subject" class="form-label">Subject</label>
+      <input type="text" class="form-control" name="subject" id="subject" placeholder="Enter the subject" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Your Message</label>
+      <textarea class="form-control" name="message" id="message" rows="4" placeholder="Type your message here" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary ">Submit</button>
+  </form>
+</div>
+</section>
+
+
+
+
+
+
+
+    {% include 'footer.html' %}
+
+
+
+
+{% endblock %}
+

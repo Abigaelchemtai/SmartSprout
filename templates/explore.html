@@ -1,0 +1,74 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} <title>Explore</title>{% endblock %}
+
+{% block content %}
+<section id="explore" class="my-5 text-center" >
+    <div class="container">
+        <div class="row">
+            <h1>Explore Schools 🏫</h1>
+
+            <p>Welcome to the Explore page, where you can discover detailed information about some of the top schools in the region.</p>
+
+            <h2 class="mt-4">Featured Schools</h2>
+
+           <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="about-img">
+                    <img src="{% static 'images/uniform2.avif' %}" alt="Brookhursts School" class="img-fluid">
+                    <h2>Brookhursts School 🌍</h2>
+                    <p>Experience the world-class education provided by Brookhouse, where global perspectives and academic excellence converge.</p>
+                    <a href="https://brookhurstschool.or.ke/" class="btn btn-warning">Learn More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="about-img">
+                    <img src="{% static 'images/kid.jpeg' %}" width="800px" height="1000" alt="Mt Kenya Academy" class="img-fluid">
+                    <h2>Mt Kenya Academy 🏞️</h2>
+                    <p>Explore the excellence of education at Mt Kenya Academy, known for its scenic campus and holistic approach to learning.</p>
+                    <a href="https://mtkenyaacademy.ac.ke/" class="btn btn-warning">Learn More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="about-img">
+                    <img src="{% static 'images/uniiform3.avif' %}" alt="Nova Pioneer" class="img-fluid">
+                    <h2>Nova Pioneer 🚀</h2>
+                    <p>Discover innovative learning experiences at Nova Pioneer, a school that embraces modern teaching methods and fosters creativity.</p>
+                    <a href="https://www.novapioneer.com/" class="btn btn-warning">Learn More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="about-img">
+                    <img src="{% static 'images/mskini.jpg' %}" width="800px" height="1000"  width="500px" height="500" alt="Makini Schools" class="img-fluid">
+                    <h2>Makini Schools 🏫</h2>
+                    <p>Makini Schools provide quality education with a focus on holistic development, nurturing students for a successful future.</p>
+                    <a href="https://www.makinischool.ac.ke/" class="btn btn-warning">Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="about-img">
+                    <img src="{% static 'images/Greengarden.jpeg' %}"  alt="Green Garden Schools" class="img-fluid">
+                    <h2>Green Garden Schools 🌳</h2>
+                    <p>Green Garden Schools offer a nurturing environment where students blossom academically, socially, and environmentally.</p>
+                    <a href="https://www.thegreengardenschools.org/" class="btn btn-warning">Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="about-img">
+                    <img src="{% static 'images/Belluve.jpeg' %}" alt="Belluvue School" class="img-fluid">
+                    <h2>Belluvue School 🏰</h2>
+                    <p>Belluvue School is dedicated to providing a rich and innovative educational experience, fostering a love for learning.</p>
+                    <a href="https://www.bellevueschool.sc.ke/" class="btn btn-warning">Learn More</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

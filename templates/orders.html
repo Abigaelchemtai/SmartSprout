@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Orders</title>
+{% endblock %}
+
+{% block content %}
+
+
+
+   <div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+             <h2 class="text-center mb-4">Order</h2>
+            <form action="" method="post">
+                {% csrf_token %}
+
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Name<i class="fas fa-user"></i></span>
+                    </div>
+                    {{ form.name }}
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Product<i class="fas fa-envelope-square"></i></span>
+                    </div>
+                    {{ form.product }}
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Price<i class="fas fa-key"></i></span>
+                    </div>
+                    {{ form.price }}
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Phone<i class="fas fa-key"></i></span>
+                    </div>
+                    {{ form.phone }}
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Message<i class="fas fa-key"></i></span>
+                    </div>
+                    {{ form.message }}
+                </div>
+                <button type="submit" class="btn btn-warning">Submit</button>
+                <a href="{% url 'index' %}" class="btn btn-primary">Home</a>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

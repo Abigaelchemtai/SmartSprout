@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+ {% block title %} <title>Services</title> {% endblock %}
+{% block content %}
+<section id="services" class="my-5 text-center">
+    <div class="container">
+        <div class="row">
+            <h1>Services 🛠️</h1>
+            <p>Welcome to the Services page, where you can explore the available services to enhance your educational experience.</p>
+            <h2 class="mt-4">Available Services</h2>
+
+            <!-- Order App -->
+            <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="card">
+                    <img src="{% static 'images/apps.avif' %}" alt="Order App" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h2 class="card-title">Order App</h2>
+                        <p class="card-text">Facilitate seamless order processing with our Order App. Prices: $25,000 per term, $80,000 per year</p>
+                        <a href="{% url 'order' %}" class="btn btn-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order System -->
+            <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="card">
+                    <img src="{% static 'images/st.avif' %}" alt="Order System" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h2 class="card-title">Order System</h2>
+                        <p class="card-text">Enhance your school's efficiency with our Order System. Prices: $50,000 per term, $148,000 per year</p>
+                        <a href="{% url 'order' %}" class="btn btn-warning">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bulk SMS -->
+            <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="card">
+                    <img src="{% static 'images/sms.jpg' %}" alt="Bulk SMS" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h2 class="card-title">Bulk SMS</h2>
+                        <p class="card-text">Stay connected with parents and students using our Bulk SMS service. Prices: $15,000 per term, $42,000 per year</p>
+                        <a href="{% url 'order' %}" class="btn btn-info">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

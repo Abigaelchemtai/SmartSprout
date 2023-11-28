@@ -1,0 +1,55 @@
+    {% load static %}
+
+<!----Navigation --->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top" style="padding: 20px;">
+  <div class="container-fluid">
+    <a class="navbar-brand text-warning font-weight-bold" href="#" style="font-size: 45px;">SmartSprout</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto" style="font-size: 18px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="##home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Discover</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'explore' %}">Explore</a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'services' %}">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blog">Blog</a>
+        </li>
+
+           <li class="nav-item">
+          <a class="nav-link" href="{% url  'contact' %}"> Contact</a>
+        </li>
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Account
+            </a>
+            <ul class="dropdown-menu">
+                {% block title %}
+            <li><a class="dropdown-item" href="{% url 'login' %}">LogIn</a></li>
+            <li><a class="dropdown-item" href="{% url 'signup' %}">SignUp</a></li>
+                    <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
+                {% endblock title %}
+             </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+<span>
+    {% if user.is_authenticated %}
+    Welcome, {{ user.username }}!
+    {% else %}
+    Welcome, Guest!
+    {% endif %}
+</span>
+</nav>
+
